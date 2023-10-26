@@ -24,11 +24,9 @@ let notInitialize:undefined = undefined;
 // const empty = null;
 // const notInitialize = undefined;
 
-function callback(num1:string, num2:string):string{
-    return `${num1} + ${num2}`
+
+function foo (num:number, symbol:string) {
+    return 100 + "a"
 }
-
-console.log(callback('100','a'))
-
  export {};
 
