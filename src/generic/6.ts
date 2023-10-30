@@ -14,8 +14,9 @@ type User = {
   password: string;
 }
 
-function createOrUpdateUser(initialValues: User) {
+function createOrUpdateUser<T>(initialValues: T): T {
   // Оновлення користувача
+  return initialValues;
 }
 
 createOrUpdateUser({ email: 'user@mail.com', password: 'password123' });
