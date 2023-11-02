@@ -8,7 +8,7 @@
 // }
 // ==========================
 
-function merge <T, K>(objA:T, objB:K){
+function merge <T extends object, K extends object>(objA:T, objB:K){
   return Object.assign(objA, objB);
 }
 const merged = merge({ name: 'Alisa' }, { age: 28 });

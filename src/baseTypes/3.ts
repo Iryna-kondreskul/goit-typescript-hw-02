@@ -6,13 +6,10 @@
 // Що потрібно виправити в цьому коді, щоб він став правильним та безпечним?
 // ===========================================================================
 
-function str(){
-    return 'Text'
+let some: unknown;
+some = "Text";
+let str: string;
+if (typeof some === "string") {
+  str = some;
 }
-
-let some:unknown = str();
-if(typeof some === 'string'){
-    let str:string = some;
-}
-
 export {};

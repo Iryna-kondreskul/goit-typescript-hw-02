@@ -25,8 +25,8 @@ let notInitialize:undefined = undefined;
 // const notInitialize = undefined;
 
 
-function foo (num:number, symbol:string) {
-    return 100 + "a"
-}
+const callback = (a: number): number => {
+    return 100 + a;
+  };
  export {};
 
