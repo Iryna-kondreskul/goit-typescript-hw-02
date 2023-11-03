@@ -10,9 +10,14 @@
 // =====================================
 
 
-interface KeyValuePair {
-  [key:string]: string | number;
-  value: string | number;
+// interface KeyValuePair {
+//   [key:string]: string | number;
+//   value: string | number;
+// }
+
+interface KeyValuePair <T, U>{
+  key: T;
+  value: U;
 }
 
 export {};
